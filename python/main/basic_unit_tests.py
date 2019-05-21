@@ -1,17 +1,18 @@
 from colorama import Fore, Back, Style, init
 init()
 
+def printHeader(what):
+    print()
+    print(Fore.BLUE + what + Style.RESET_ALL)
 
 def printGood(what):
     #print(Back.GREEN + 'and with a green background')
     #print(Style.DIM + 'and in dim text')
-    print(Fore.GREEN + what)
-    print(Style.RESET_ALL)
+    print(Fore.GREEN + what + Style.RESET_ALL)
 
 
 def printBad(what):
-    print(Fore.RED + what)
-    print(Style.RESET_ALL)
+    print(Fore.RED + what + Style.RESET_ALL)
 
 
 class basic_unit_tests:
@@ -27,7 +28,7 @@ class basic_unit_tests:
         expected_str = str(expected)
         returned_str = str(returned)
         if (self.testAt == 0):
-            print(" -- Running tests on " + self.name + " -- ")
+            printHeader(" -- Running tests on " + self.name + " -- ")
         if (expected == returned):
             printGood("Test " + str(self.testAt) +
                       " passed with '" + str(returned) + "'")

@@ -1,17 +1,15 @@
 from main.basic_unit_tests import basic_unit_tests
 
-# Description
-# ------ #
+# DESC
 # Create a function that returns the name of the winner in a fight between two
 # fighters. Each fighter takes turns attacking the other and whoever kills the
 # other first is victorious. Death is defined as having health <= 0. Each
 # fighter will be a Fighter object/instance. See the Fighter class below in your
 # chosen language. Both health and damagePerAttack (damage_per_attack for
 # python) will be integers larger than 0. You can mutate the Fighter objects.
+# --------------- #
 
 
-# MY CODE
-# ------ #
 def declare_winner(fighter1, fighter2, first_attacker):
     attacks = 0
     if (fighter1.name == first_attacker):
@@ -38,9 +36,9 @@ class Fighter(object):
 
     __repr__ = __str__
 
-# Unit tests
-# ------ #
-# Example test cases
+
+# --------------- #
+# TEST
 test = basic_unit_tests()
 test.describe("Example test cases")
 test.assert_equals(

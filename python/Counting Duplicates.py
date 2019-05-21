@@ -1,14 +1,13 @@
 from main.basic_unit_tests import basic_unit_tests
 
-# Description
-# ------ #
+# DESC
 # Write a function that will return the count of distinct case-insensitive
 # alphabetic characters and numeric digits that occur more than once in the
 # input string. The input string can be assumed to contain only alphabets (both
 # uppercase and lowercase) and numeric digits.
+# --------------- #
 
-# MY CODE
-# ------ #
+
 def duplicate_count(text):
     letters = list(str(text).lower())
     used = {}
@@ -29,8 +28,9 @@ def duplicate_count(text):
     return duples
 
 
-# Unit tests
-# ------ #
+
+# --------------- #
+# TEST
 test = basic_unit_tests()
 test.assert_equals(duplicate_count("abcde"), 0)
 test.assert_equals(duplicate_count("abcdea"), 1)

@@ -1,19 +1,19 @@
 from main.basic_unit_tests import basic_unit_tests
 
-# Description
-# ------ #
+# DESC
 # Simple, given a string of words, return the length of the shortest word(s).
 # String will never be empty and you do not need to account for different data types.
+# --------------- #
 
-# MY CODE
-# ------ #
+
 def find_short(s):
     orig = s.split(" ")
     shortest = sorted(orig, key=len)[0]
     return len(shortest)
 
-# Unit tests
-# ------ #
+
+# --------------- #
+# TEST
 test = basic_unit_tests()
 test.describe("Basic Tests")
 test.assert_equals(find_short(
