@@ -14,7 +14,7 @@ def printBad(what):
     print(Style.RESET_ALL)
 
 
-class basic_test_class:
+class basic_unit_tests:
     def __init__(self):
         self.testAt = 0
         self.name = "CodeWar unit tests"
@@ -41,17 +41,3 @@ class basic_test_class:
         self.testAt += 1
 
 
-test = basic_test_class()
-
-# STUFF BELOW
-
-# Description
-# ------ #
-
-
-# MY CODE
-# ------ #
-
-
-# Unit tests
-# ------ #
