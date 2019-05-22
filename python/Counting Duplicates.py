@@ -1,4 +1,5 @@
 from main.basic_unit_tests import basic_unit_tests
+test = basic_unit_tests()
 
 # DESC
 # Write a function that will return the count of distinct case-insensitive
@@ -31,7 +32,6 @@ def duplicate_count(text):
 
 # --------------- #
 # TEST
-test = basic_unit_tests()
 test.assert_equals(duplicate_count("abcde"), 0)
 test.assert_equals(duplicate_count("abcdea"), 1)
 test.assert_equals(duplicate_count("indivisibility"), 1)

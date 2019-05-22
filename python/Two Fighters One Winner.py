@@ -1,4 +1,5 @@
 from main.basic_unit_tests import basic_unit_tests
+test = basic_unit_tests()
 
 # DESC
 # Create a function that returns the name of the winner in a fight between two
@@ -39,7 +40,6 @@ class Fighter(object):
 
 # --------------- #
 # TEST
-test = basic_unit_tests()
 test.describe("Example test cases")
 test.assert_equals(
     declare_winner(

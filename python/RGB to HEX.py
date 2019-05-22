@@ -1,4 +1,5 @@
 from main.basic_unit_tests import basic_unit_tests
+test = basic_unit_tests()
 
 # DESC
 # Write a function that converts three channels of RGB to a HEX code (255,255,255 --> FFFFFF)
@@ -24,7 +25,6 @@ def rgb(r, g, b):
 
 # --------------- #
 # TEST
-test = basic_unit_tests()
 test.describe("Addition")
 test.assert_equals(rgb(0,0,0),"000000", "testing zero values")
 test.assert_equals(rgb(1,2,3),"010203", "testing near zero values")

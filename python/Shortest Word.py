@@ -1,4 +1,5 @@
 from main.basic_unit_tests import basic_unit_tests
+test = basic_unit_tests()
 
 # DESC
 # Simple, given a string of words, return the length of the shortest word(s).
@@ -14,7 +15,6 @@ def find_short(s):
 
 # --------------- #
 # TEST
-test = basic_unit_tests()
 test.describe("Basic Tests")
 test.assert_equals(find_short(
     "bitcoin take over the world maybe who knows perhaps"), 3)
