@@ -1,7 +1,7 @@
 from main.basic_unit_tests import basic_unit_tests
 
 # DESC
-# Make a function that adds two numbers
+# Write a function that converts three channels of RGB to a HEX code (255,255,255 --> FFFFFF)
 # --------------- #
 
 
