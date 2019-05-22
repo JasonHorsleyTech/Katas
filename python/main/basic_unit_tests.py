@@ -20,7 +20,7 @@ def printBad(what):
 class basic_unit_tests:
     def __init__(self):
         self.testAt = 0
-        self.kataName = "CodeWar unit tests"
+        self.kataName = "CodeWar Kata"
 
     def describe(self, kataName):
         # Some have a describe method call before the tests, some don't.
@@ -30,7 +30,7 @@ class basic_unit_tests:
         expected_str = str(expected)
         returned_str = str(returned)
         if (self.testAt == 0):
-            printHeader(" -- Running tests on " + self.kataName + " -- ")
+            printHeader("-- Running tests on " + self.kataName + " --")
         if (expected == returned):
             printGood("Test " + str(self.testAt) +
                       " passed with '" + str(returned) + "'")
