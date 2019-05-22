@@ -1,5 +1,5 @@
 # Katas
-Practice problems in different languages, to keep skills sharp and learn new languages.
+Practice problems in different languages, to keep skills sharp and learn new tools.
 
 ## Why
 I'm at the point professionally where I _know_ the solution, but can't always _spell it out_ in my non-favorite languages. So I see this as a fun way to widen my skill set.
