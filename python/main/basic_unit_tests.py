@@ -1,9 +1,11 @@
 from colorama import Fore, Back, Style, init
 init()
 
+
 def printHeader(what):
     print()
     print(Fore.BLUE + what + Style.RESET_ALL)
+
 
 def printGood(what):
     #print(Back.GREEN + 'and with a green background')
@@ -18,17 +20,17 @@ def printBad(what):
 class basic_unit_tests:
     def __init__(self):
         self.testAt = 0
-        self.name = "CodeWar unit tests"
+        self.kataName = "CodeWar unit tests"
 
-    def describe(self, name):
+    def describe(self, kataName):
         # Some have a describe method call before the tests, some don't.
-        self.name = name
+        self.kataName = kataName
 
-    def assert_equals(self, returned, expected):
+    def assert_equals(self, returned, expected, testName=''):
         expected_str = str(expected)
         returned_str = str(returned)
         if (self.testAt == 0):
-            printHeader(" -- Running tests on " + self.name + " -- ")
+            printHeader(" -- Running tests on " + self.kataName + " -- ")
         if (expected == returned):
             printGood("Test " + str(self.testAt) +
                       " passed with '" + str(returned) + "'")
@@ -40,5 +42,3 @@ class basic_unit_tests:
                 error += "\n" + "  !Different types!"
             printBad(error)
         self.testAt += 1
-
-
